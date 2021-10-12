@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="center">
+    <h1>Perfect Pizza</h1>
+    </div>
+
+    <div class="containerBox hidden">
+        <span class="message">Message</span> 
+        <br>
+        <button class="close" on type="button">&times;</button>
+    </div>
+
+    <div class="contain cart">
+        <h2>Shopping Cart</h2>
+        <table class="cartTable">
+            <tr>
+                <td class="item">
+                    <h3 class="item">Small Pizza</h3>
+                </td>
+                <td><button class="pBtn small" id="test" on type="button" name="add">+</button></td>
+                <td>
+                    <h3 class="smallPizzaQty item">0</h3>
+                </td>
+                <td><button class="mBtn small" on type="button" name="reduce">-</button></td>
+                <td>
+                    <h3 class="item">R<span class="smallPizzaTotal">0.00</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="item">
+                    <h3 class="item">Medium Pizza</h3>
+                </td>
+                <td><button class="pBtn med" on type="button" name="add">+</button></td>
+                <td>
+                    <h3 class="medPizzaQty item">0</h3>
+                </td>
+                <td><button class="mBtn med" on type="button" name="reduce">-</button></td>
+                <td>
+                    <h3 class="item">R<span class="medPizzaTotal">0.00</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3 class="item">Large Pizza</h3>
+                </td>
+                <td><button class="pBtn large" on type="button" name="add">+</button></td>
+                <td>
+                    <h3 class="largePizzaQty item">0</h3>
+                </td>
+                <td><button class="mBtn large" on type="button" name="reduce">-</button></td>
+                <td>
+                    <h3 class="item">R<span class="largePizzaTotal">0.00</span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="4">
+                    <h3 class="item">Total cost</h3>
+                </td>
+                <td>
+                    <h3 class="item">R<span class="cartTotal">0.00</span></h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="5">
+                    <button class="checkOut hidden" on type="button" name="checkOut">order</button>
+                </td>
+
+            </tr>
+        </table>
+
+        <div class="payOut hidden">
+            <table class="cartTable">
+                <tr>
+                    <td>
+                        <h3>Payment Amount:</h3>
+                    </td>
+                    <td class="pAmt">R<input class="payAmt" type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="payBtn" on type="button" name="pay">order</button>
+                    </td>
+                    <td>
+                       
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="pizzas">
+        <div class="contain small_pizza">
+
+            <h2>Small Pizza</h2>
+
+            <div class="pizza_img">
+                <img src="Pizzap.png" width="150">
+                
+            </div>
+
+            <table class="pizza_top">
+                <tr>
+                    <td colspan="2">
+                        <h3>R39.00</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Small pizza with double creamy cheese, chicken and mashroom.
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pBtn small buy" on type="button" name="add">Buy</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contain medium_pizza">
+
+            <h2>Medium Pizza</h2>
+
+            <div class="pizza_img">
+                <img src="Pizzap.png" width="150">
+                
+            </div>
+
+            <table class="pizza_top">
+                <tr>
+                    <td colspan="2">
+                        <h3>R89.00</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Medium pizza with double creamy cheese, chicken and mashroom.
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pBtn med buy" on type="button" name="add">Buy</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contain large_pizza">
+
+            <h2>Large Pizza</h2>
+
+            <div class="pizza_img">
+                <img src="Pizzap.png" width="150">
+                
+            </div>
+
+            <table class="pizza_top">
+                <tr>
+                    <td colspan="2">
+                        <h3>R129.00</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Large Pizza with double creamy cheese, chicken and mashroom.
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pBtn large buy" on type="button" name="add">Buy</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="center contact pizza contact_us">
+                <div>
+                <h2>Contact Details</h2>
+                Contact us at: 031 519 7034 info@perfectpizza.co.za
+        
+        
+            </div> 
+            
+    <script src="pizzacart.js" charset="utf-8"></script>
+
+</body>
+
+</html>
